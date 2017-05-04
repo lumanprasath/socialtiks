@@ -1,0 +1,146 @@
+<div class="row">
+
+
+ <div class= "col-xlg-6 col-xl-6 col-lg-6 col-sm-6 col-xs-6 ">
+       <ba-card  title=" League Monitoring" baCardClass="medium-card">   
+
+    <div class="row">
+        <div class=" col-md-8 input-demo radio-demo row">
+                <!--<div  class="col-md-4">
+                <label class="radio-inline custom-radio nowrap">
+                    <input type="radio" name="inlineRadioOptions" (click)="overall()" id="inlineRadio1" value="option1" checked="checked">
+                    <span class="radiotext">League Monitoring </span>
+                </label>
+                </div>-->
+
+                <!--<div  class="col-md-4">
+                <label class="radio-inline custom-radio nowrap">
+                    <input type="radio" name="inlineRadioOptions" (click)="brandwise()" id="inlineRadio1" value="option2" >
+                    <span class="radiotext">Brandwise</span>
+                </label>
+                </div>-->
+        </div>
+        </div>
+       
+
+       <div id="overall">
+         <div class="row top-buffer">
+        <div class="col-md-2 col-xs-6"> 
+            <div class="radiotext"> <label for="name">   League </label> </div>
+            <select class="dropbtn" (change)="OnChangeChannel()"   [(ngModel)]="selected_league">
+                
+                <option *ngFor="let item of dropDownLeague " value="{{item.league}}" >
+                    {{item.name | uppercase }}
+                   
+                </option>
+            </select>
+        </div>  
+        </div>
+
+       <div class="row top-buffer">      
+        <div class="col-md-2 col-xs-6"> 
+           <div class="radiotext"> <label for="name">   Match </label> </div>
+          <select class="dropbtn"    [(ngModel)]="selected_match">
+                
+                <option *ngFor="let item of dropDownMatch" value="{{item.match}}" disabled >
+                    {{item.name | uppercase }}
+                   
+                </option>
+            </select>
+        </div>  
+       
+     </div> 
+      <button   (click)="clickleaguemonitoring()" class="btn btn-primary  nextbutton 	fa fa-database  " >  View </button>
+      </div>
+
+      <!--<div id="brandwise">
+               <div class="row top-buffer">
+        <div class="col-md-3 col-xs-6"> 
+            <div class="radiotext"> <label for="name">   League </label> </div>
+            <select class="dropbtn" (change)="OnChangeChannel()"   [(ngModel)]="selected_league">
+                
+                <option *ngFor="let item of dropDownLeague " value="{{item.league}}" >
+                    {{item.name | uppercase }}
+                   
+                </option>
+            </select>
+        </div>  
+        </div>
+
+       <div class="row top-buffer">      
+        <div class="col-md-3 col-xs-6"> 
+           <div class="radiotext"> <label for="name">   Match </label> </div>
+          <select class="dropbtn"    [(ngModel)]="selected_match">
+                
+                <option *ngFor="let item of dropDownMatch" value="{{item.match}}" disabled >
+                    {{item.name | uppercase }}
+                   
+                </option>
+            </select>
+        </div>      
+     </div> 
+
+         <div class="row top-buffer">      
+        <div class="col-md-3 col-xs-6"> 
+           <div class="radiotext"> <label for="name">   Select Brand </label> </div>
+          <select class="dropbtn"    [(ngModel)]="selected_brand">              
+                <option *ngFor="let item of allLogoLabels" value="{{item}}"  >
+                    {{item | uppercase }}              
+                </option>
+            </select>
+        </div>  
+       
+     </div> 
+      <button   (click)="clickbrandwisemaplytiks()" class="btn btn-primary  nextbutton 	fa fa-database  " >  View </button>
+      </div>-->
+
+      </ba-card>
+</div>
+
+ <!--<div class= "col-xlg-6 col-xl-6 col-lg-6 col-sm-6 col-xs-6 ">
+       <ba-card  title=" Create New Project" baCardClass="medium-card">
+   
+
+                <button (click)="clicked()" class="btn btn-danger nextbutton	fa fa-plus-square " >  Create </button>
+              
+      </ba-card>
+</div>-->
+</div>
+    <!--<div class="row col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-xs-12">
+
+      <ba-card class="col-xlg-6 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-xs-12"
+               baCardClass="popular-app medium-card">
+        <popular-app></popular-app>
+      </ba-card>-->
+    
+
+
+
+
+<!--<div class="row">
+   <ba-card title="Notifications" class="col-xlg-12 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-xs-12"
+            baCardClass="medium-card with-scroll feed-panel ">
+     <feed></feed>
+   </ba-card>
+
+</div>-->
+<!--<carousel>
+  <slide>
+    <img src="assets/images/nature/1.jpg" alt="First slide">
+  </slide>
+  <slide>
+    <img src="assets/images/nature/2.jpg" alt="Second slide">
+  </slide>
+  <slide>
+    <img src="assets/images/nature/3.jpg" alt="Third slide">
+  </slide>
+</carousel>-->
+
+
+
+
+
+ 
+
+
+
